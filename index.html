@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,6 +16,7 @@
             <h1>Eatch-Sketch-Pad</h1>
         </div>
         <div class="content">
+            <span class="playAccesse"> </span>
             <div class="board"></div>
             <div class="buttons">
                 <button id="blackButton">Black</button>
@@ -19,10 +24,13 @@
                 <button id="randomButton">Random</button>
                 <button id="earaseButton">Earase</button>
             </div>
-            <div>
+            <div class="inp-section">
                 <input type="text" placeholder="size" value="16">
-                <button class="setButton">set size</button>
+                <button class="setButton">Set size</button>
             </div>
+        </div>
+        <div class="footer">
+            <span class="git-logo"><i class="fa-brands fa-github"></i>Atmani Chouaib</span>
         </div>
     </div>
 

@@ -1,5 +1,5 @@
 let color = "black"; //global color variable 
-
+let click = false ; 
 //button targettings 
 let setButton = document.querySelector(".setButton");
 let randomButton = document.querySelector("#randomButton") ; 
@@ -10,6 +10,18 @@ let resetButton = document.querySelector("#resetButton") ;
 //default onload app  16 x 16 
 document.addEventListener("DOMContentLoaded", function() {
     createBoard(16); 
+
+    document.querySelector("body").addEventListener("click" , (e)=> {
+        if(e.target.tagName != "BUTTON"){
+            click = !click ;  
+            let draw = document.querySelector(".playAccesse"); 
+            if(click){
+                draw.innerHTML = "Now you Can Draw" ; 
+            }else {
+                draw.innerHTML = "You Can't Draw Right Now" ;
+            }
+        }
+    })
 
 })
 //board creation function 
@@ -35,8 +47,7 @@ function getSize(){
     let userInpVal = document.querySelector("input").value; 
     if(userInpVal < 2 || userInpVal >= 100){
         console.log("wrong input"); 
-    }else{
-        console.log("play"); 
+        return; 
     }
     return userInpVal ;
 }
@@ -44,15 +55,17 @@ function getSize(){
 //set color function 
 
 function colorDiv(){
-    if(color == "random"){
-        this.style.backgroundColor = `hsl(${Math.random()*360},100% ,50%)`; 
-    }else if (color == "black"){
-        this.style.backgroundColor = "black"; 
-    }else if(color == "white"){
-        this.style.backgroundColor = "white"; 
-    }else {
-        this.style.backgroundColor = "black"; 
-    }    
+    if(click){
+        if(color == "random"){
+            this.style.backgroundColor = `hsl(${Math.random()*360},100% ,50%)`; 
+        }else if (color == "black"){
+            this.style.backgroundColor = "black"; 
+        }else if(color == "white"){
+            this.style.backgroundColor = "white"; 
+        }else {
+            this.style.backgroundColor = "black"; 
+        }    
+    }  
 }
 //assigning color choice to the color variable 
 function setColor(colorChoice){
