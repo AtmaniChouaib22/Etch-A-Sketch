@@ -15,30 +15,29 @@
     box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.5) ;
 }
 h1{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    margin: 0;
 }
 .playAccesse {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .flex-container{
-    height: 100vh;
     display: flex ;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 10px;
     background: linear-gradient(to top right, rgba(255,215,215,1) 15%, rgba(157,246,255,1) 100%);;
 }
 .content {
     display: flex;
     flex-direction: column; 
-    gap: 3rem;
-
+    gap: 10px;
 }
 
 .buttons {
