@@ -1,4 +1,11 @@
 # Etch-A-Sketch
-My Etch-A-Sketch 
-<a href="https://eatchasketch.netlify.app/">view live</a>
+<h1>the odin project: Eatch-A-sketch pro,ect</h1>
+<p>built using vanilla js, html,css</p>
+
+<a href="https://eatchasketch.netlify.app/">visit here</a>
+<h4>this project covers: </h4>
+<ul>
+    <li>DOM manipulation</li>
+    <li>frontend styling skills(grid system)</li>
+</ul>
 <img src="eatch.png">
