@@ -1,5 +1,5 @@
 # Etch-A-Sketch
-<h1>the odin project: Eatch-A-sketch pro,ect</h1>
+<h1>Eatch-A-sketch pro,ect</h1>
 <p>built using vanilla js, html,css</p>
 
 <a href="https://eatchasketch.netlify.app/">visit here</a>
